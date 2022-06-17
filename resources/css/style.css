@@ -1,0 +1,643 @@
+* {
+    font-family: 'Gill Sans', sans-serif;
+}
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+header {
+    background-color: white;
+    height: 4rem;
+    border-bottom: 1px solid white;
+    /*position: fixed;*/
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    height: 4rem;
+}
+
+
+/*.nav-content{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    font-size: 32px;
+    font-family: 'Gill Sans', sans-serif;
+}
+*/
+
+/*.nav-content h3{
+    align-self: center;
+    
+}
+*/
+
+.nav-container span {
+    font-weight: lighter;
+    opacity: 0.5;
+}
+
+.nav-container img {
+    padding-left: 1.5rem;
+    height: 100%;
+}
+
+header nav ul {
+    display: inline-flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 2.5rem;
+}
+
+nav li {
+    /*padding-left: 1rem;*/
+    display: inline-block;
+    padding-right: 1rem;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+/* Banner */
+.banner-container {
+    display: flex;
+    background-color: #c0c0c0;
+}
+
+.banner-container img {
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.banner-text {
+    align-self: center;
+    padding-left: 1.5rem;
+}
+
+.banner-text h5 {
+    background-color: #000000;
+    text-align: center;
+    align-self: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 18.75rem;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.banner-text h2 {
+    font-size: 70px;
+    opacity: 0.75;
+}
+
+.banner-text h4 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.banner-text a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+/* Information Main */
+.information-main {
+    display: flex;
+    margin: 2rem 0rem 2rem 1.5rem;
+}
+
+.primary-img-container img{
+    margin-right: 1.5rem;
+    width: 100%;
+    margin-top: 0.938rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 40%;
+    border-left: 1px solid whitesmoke;
+    margin-left: 1.5rem;
+}
+
+.card img {
+    width: 35%;
+    height: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+/*.card .item-1 {
+    display: flex;
+    background-color: white;
+    border-bottom: 1px black;
+}
+*/
+
+.card
+.item-1,
+.item-2,
+.item-3 {
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    padding-left: 1rem;
+}
+
+.card
+.item-1-text,
+.item-2-text,
+.item-3-text {
+    align-self: center;
+    padding-left: 1rem;
+}
+
+.card a {
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+#keep-pratice {
+    font-size: 58px;
+    font-weight: bold;
+    opacity: 0.75;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+
+}
+
+#random-text {
+    font-size: 31px;
+    font-weight: 100;
+}
+
+#strategist {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.card h3 {
+    font-size: 30px;
+    opacity: 0.7;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.card h4 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    font-weight: 100;
+}
+
+/* Card container */
+.card-container {
+    background-color: whitesmoke;
+    margin-bottom: 2rem;
+}
+
+.start-container {
+    text-align: center;
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 4.5rem;
+    padding-bottom: 2rem;
+}
+
+.course-software,
+.course-computer-art,
+.course-design,
+.course-data,
+.course-business,
+.course-marketing {
+    background-color: white;
+    border: 1px solid white;
+    width: 500px;
+    margin-left: 2rem;
+    /*margin-top: 2rem;*/
+    margin-bottom: 2rem;
+}
+
+.course-computer-art {
+    /*height: 25.72rem;*/
+    /*height: 17.22rem;*/
+    /*height: 12.78rem;*/
+    height: 28.98rem;
+}
+
+.card-content img {
+    height: auto;
+    width: 31.25rem;
+    
+}
+
+.card-content p {
+    margin-left: 1rem;
+}
+
+#learn {
+    font-size: 58px;
+    font-weight: bold;
+    opacity: 0.7;
+    padding-top: 2rem;
+}
+
+#course-sec {
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#programme {
+    font-size: 30px;
+}
+
+#course {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/* Thesis section */
+
+.thesis-container {
+    /*margin-bottom: 2rem;*/
+    border-bottom: 1px solid whitesmoke;
+}
+
+.thesis {
+    text-align: center;
+    font-size: 58px;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.video-content {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.video-content video{
+    max-width: 100%;
+}
+
+.thesis-img-container img{
+    width: 35%;
+    height: auto;
+}
+
+.thesis-fisma {
+    background-color: whitesmoke;
+    display: flex;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.thesis-now-then {
+    background-color: white;
+    display: flex;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.fisma-text,
+.now-then-text {
+    padding-left: 1rem;
+    align-self: center;
+}
+
+#urban {
+    font-size: 30px;
+}
+
+#curabitur {
+    font-size: 18px;
+    /*font-weight: 100;*/
+    opacity: 0.7;
+}
+
+.fisma-text h3{
+    font-size: 30px;
+    opacity: 0.7;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.now-then-text h3 {
+    font-size: 30px;
+    opacity: 0.7;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.fisma-text h4 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 8px;
+}
+
+.now-then-text h4 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 8px;
+
+}
+
+/*Footer*/
+footer {
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+footer span {
+    margin-left: 24px;
+    opacity: 0.7;
+}
+
+footer ul {
+    display: inline-flex;
+    margin-left: auto;
+    list-style: none;
+}
+
+footer li {
+    /*padding-left: 1rem;*/
+    margin-right: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+
+/* Screen Resolution */
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+    .nav-container img {
+        padding-left: 1.5rem;
+        height: 90%;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        height: 4rem;
+    }
+
+    .banner-text h2 {
+        font-size: 50px;
+        opacity: 0.75;
+    }
+    
+    .banner-text h4 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    #keep-pratice {
+        font-size: 50px;
+        font-weight: bold;
+        opacity: 0.75;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #random-text {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        opacity: 0.7;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+
+    .card h4 {
+        font-size: 12px;
+        font-weight: 100;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #learn {
+        font-size: 50px;
+        font-weight: bold;
+        opacity: 0.7;
+        padding-top: 2rem;
+    }
+
+    .thesis {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        opacity: 0.7;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .fisma-text h3 {
+        font-size: 16px;
+        opacity: 0.7;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    .fisma-text h4 {
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 8px;
+    }
+
+    .now-then-text h3 {
+        font-size: 16px;
+        opacity: 0.7;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    .now-then-text h4 {
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .banner-container {
+        display: flex;
+        background-color: #c0c0c0;
+        flex-wrap: wrap;
+    }
+
+    .nav-container img {
+        padding-left: 1.5rem;
+        height: 90%;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        height: 4rem;
+    }
+
+    .banner-container img {
+        width: 90%;
+        padding: 2rem 1.5rem;
+    }
+
+    .banner-text h2 {
+        font-size: 50px;
+        opacity: 0.75;
+    }
+    
+    .banner-text h4 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .information-main {
+        display: flex;
+        margin: 2rem 0rem 2rem 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .primary-img-container img {
+        margin-right: 1.5rem;
+        width: 95%;
+        margin-top: 0.938rem;
+    }
+
+    #keep-pratice {
+        font-size: 50px;
+        font-weight: bold;
+        opacity: 0.75;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #random-text {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        opacity: 0.7;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+
+    .card h4 {
+        font-size: 12px;
+        font-weight: 100;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #learn {
+        font-size: 50px;
+        font-weight: bold;
+        opacity: 0.7;
+        padding-top: 2rem;
+    }
+
+    .video-container {
+        display: flex;
+        padding-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .thesis {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        opacity: 0.7;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .fisma-text h3 {
+        font-size: 16px;
+        opacity: 0.7;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    .fisma-text h4 {
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 8px;
+    }
+
+    .now-then-text h3 {
+        font-size: 16px;
+        opacity: 0.7;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    .now-then-text h4 {
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px){
+
+    
+}
