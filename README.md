@@ -3,6 +3,6 @@ Capstone Project assigned to me by [Codecacademy](https://www.codecademy.com/)</
 Involves a single paged website with just css and html.</br>
 
 # Check it out :point_down:
-[colmar-academy]()
+[colmar-academy-project](https://vicganoh.github.io/colmar-academy/)
 
 Made in GH:ghana: :green_heart:
