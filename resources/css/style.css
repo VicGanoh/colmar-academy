@@ -17,10 +17,8 @@ body {
 
 /*Header*/
 header {
-    background-color: white;
+    
     height: 4rem;
-    border-bottom: 1px solid white;
-    /*position: fixed;*/
     width: 100%;
 }
 
@@ -30,6 +28,11 @@ header {
     justify-content: center;
     align-items: center;
     height: 4rem;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid white;
 }
 
 .logo-mobile {
