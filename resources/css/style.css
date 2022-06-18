@@ -24,7 +24,6 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
     height: 4rem;
 }
 
@@ -43,8 +42,11 @@ header {
     
 }
 */
+.head-title {
+    font-size: 32px;
+}
 
-.nav-container span {
+#sub-title {
     font-weight: lighter;
     opacity: 0.5;
 }
@@ -99,8 +101,8 @@ nav a:hover {
     background-color: #000000;
     text-align: center;
     align-self: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     width: 18.75rem;
     font-size: 20px;
     font-weight: 400;
@@ -261,7 +263,8 @@ nav a:hover {
 
 .card-content img {
     height: auto;
-    width: 31.25rem;
+    /*width: 31.25rem;*/
+    width: 100%;
     
 }
 
@@ -513,11 +516,15 @@ footer a {
     }
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 900px){
     .banner-container {
         display: flex;
         background-color: #c0c0c0;
         flex-wrap: wrap;
+    }
+
+    .head-title {
+        font-size: 25px;
     }
 
     .nav-container img {
@@ -532,6 +539,10 @@ footer a {
         align-items: center;
         font-size: 25px;
         height: 4rem;
+    }
+
+    nav li {
+        font-size: 18px;
     }
 
     .banner-container img {
@@ -637,7 +648,140 @@ footer a {
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 500px){
 
+@media screen and (max-width: 425px){
+    .logo-repl {
+        display: none;
+
+    }
+
+    .head-title {
+        display: none;
+    }
+
+    .nav-item-1 {
+        background-image: url(/Users/vicgan/Documents/Codecacademy/Colmar_academy/resources/icons/ic-online.svg);
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .banner-container img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner-text {
+        padding: 1rem;
+    }
+
+    .banner-text h2 {
+        font-size: 40px;
+        opacity: 0.75;
+    }
+
+    .banner-text h5 {
+        background-color: #000000;
+        text-align: center;
+        align-self: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 400;
+        opacity: 0.7;
+    }
+
+    .information-main {
+        margin: 0;
+    }
+
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 16px;
+    }
+
+    .card .item-1, .item-2, .item-3 {
+        /* display: flex; */
+        background-color: white;
+        /* border-bottom: 1px solid whitesmoke; */
+        /* padding-left: 1rem; */
+    }
+
+    .primary-img-container{
+        display: none;
+    }
+
+    .course-software {
+        /*width: ;*/
+        width: 500px;
+    }
+
+    #course-img,
+    #course,
+    #course-sec {
+        display: none;
+    }
+
+    #learn {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 35px;
+    }
     
+    .course-computer-art {
+        height: 96.5px;
+    }
+
+    .course-software,
+    .course-computer-art,
+    .course-design,
+    .course-data,
+    .course-business,
+    .course-marketing {
+        background-color: #c0c0c0;
+        border: 1px solid #c0c0c0;
+        width: 500px;
+        margin-left: 0rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .thesis p {
+        font-size: 35px;
+    }
+    .video-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .video-content p {
+        display: none;
+    }
+
+    .thesis-img-container {
+        display: none;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    footer ul {
+        display: none;
+    }
 }
+
