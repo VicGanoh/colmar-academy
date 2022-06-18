@@ -10,6 +10,11 @@ body {
     padding: 0;
 }
 
+.whole-content {
+    display: flex;
+    flex-direction: column;
+}
+
 /*Header*/
 header {
     background-color: white;
@@ -27,21 +32,10 @@ header {
     height: 4rem;
 }
 
-
-/*.nav-content{
-    display: flex;
-    align-items: center;
-    height: 64px;
-    font-size: 32px;
-    font-family: 'Gill Sans', sans-serif;
+.logo-mobile {
+    display: none;
 }
-*/
 
-/*.nav-content h3{
-    align-self: center;
-    
-}
-*/
 .head-title {
     font-size: 32px;
 }
@@ -144,6 +138,10 @@ nav a:hover {
     width: 40%;
     border-left: 1px solid whitesmoke;
     margin-left: 1.5rem;
+}
+
+.card-mobile {
+    display: none;
 }
 
 .card img {
@@ -420,7 +418,7 @@ footer a {
     opacity: 0.7;
 }
 
-/* Screen Resolution */
+/* Media Query */
 @media only screen and (min-width: 1024px) and (max-width: 1024px) {
     .nav-container img {
         padding-left: 1.5rem;
@@ -428,91 +426,56 @@ footer a {
     }
 
     .nav-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         font-size: 25px;
-        height: 4rem;
     }
 
     .banner-text h2 {
         font-size: 50px;
-        opacity: 0.75;
     }
     
     .banner-text h4 {
         font-size: 25px;
-        font-weight: 400;
     }
 
     #keep-pratice {
         font-size: 50px;
-        font-weight: bold;
-        opacity: 0.75;
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
     }
 
     #random-text {
         font-size: 20px;
-        font-weight: 100;
     }
 
     .card h3 {
         font-size: 18px;
-        opacity: 0.7;
-        font-weight: 400;
-        margin-bottom: 0.5rem;
     }
 
     .card h4 {
         font-size: 12px;
-        font-weight: 100;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
     }
     
     #learn {
         font-size: 50px;
-        font-weight: bold;
-        opacity: 0.7;
         padding-top: 2rem;
     }
 
     .thesis {
-        text-align: center;
         font-size: 50px;
-        font-weight: bold;
-        opacity: 0.7;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
     }
 
     .fisma-text h3 {
         font-size: 16px;
-        opacity: 0.7;
-        font-weight: 400;
-        margin-bottom: 8px;
     }
 
     .fisma-text h4 {
         font-size: 14px;
-        font-weight: 100;
-        margin-top: 8px;
     }
 
     .now-then-text h3 {
         font-size: 16px;
-        opacity: 0.7;
-        font-weight: 400;
-        margin-bottom: 8px;
     }
 
     .now-then-text h4 {
         font-size: 14px;
-        font-weight: 100;
-        margin-top: 8px;
     }
 }
 
@@ -533,12 +496,7 @@ footer a {
     }
 
     .nav-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         font-size: 25px;
-        height: 4rem;
     }
 
     nav li {
@@ -552,17 +510,13 @@ footer a {
 
     .banner-text h2 {
         font-size: 50px;
-        opacity: 0.75;
     }
     
     .banner-text h4 {
         font-size: 25px;
-        font-weight: 400;
     }
 
     .information-main {
-        display: flex;
-        margin: 2rem 0rem 2rem 1.5rem;
         flex-wrap: wrap;
     }
 
@@ -574,51 +528,42 @@ footer a {
 
     #keep-pratice {
         font-size: 50px;
-        font-weight: bold;
-        opacity: 0.75;
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
     }
 
     #random-text {
         font-size: 20px;
-        font-weight: 100;
+    }
+
+    .card {
+        width: 100%;
     }
 
     .card h3 {
-        font-size: 18px;
-        opacity: 0.7;
-        font-weight: 400;
-        margin-bottom: 0.5rem;
+        font-size: 30px;
     }
 
-    .card h4 {
-        font-size: 12px;
-        font-weight: 100;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+    .card img {
+        width: auto;
     }
     
     #learn {
         font-size: 50px;
-        font-weight: bold;
-        opacity: 0.7;
-        padding-top: 2rem;
     }
 
     .video-container {
-        display: flex;
-        padding-bottom: 2rem;
         flex-wrap: wrap;
     }
 
+    .video-container video {
+        width: auto;
+    }
+
+    .thesis-img-container{
+        margin-left: 1rem;
+    }
+
     .thesis {
-        text-align: center;
         font-size: 50px;
-        font-weight: bold;
-        opacity: 0.7;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
     }
 
     .fisma-text h3 {
@@ -630,37 +575,37 @@ footer a {
 
     .fisma-text h4 {
         font-size: 14px;
-        font-weight: 100;
-        margin-top: 8px;
     }
 
     .now-then-text h3 {
         font-size: 16px;
-        opacity: 0.7;
-        font-weight: 400;
-        margin-bottom: 8px;
     }
 
     .now-then-text h4 {
         font-size: 14px;
-        font-weight: 100;
-        margin-top: 8px;
     }
 }
 
 
 @media screen and (max-width: 425px){
-    .logo-repl {
+    .logo-desktop {
         display: none;
+    }
 
+    .logo-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    
+    .logo-mobile img{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .head-title {
         display: none;
-    }
-
-    .nav-item-1 {
-        background-image: url(/Users/vicgan/Documents/Codecacademy/Colmar_academy/resources/icons/ic-online.svg);
     }
 
     .main-content {
@@ -682,35 +627,50 @@ footer a {
     }
 
     .banner-text h5 {
-        background-color: #000000;
-        text-align: center;
-        align-self: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
         width: 100%;
         font-size: 20px;
-        font-weight: 400;
-        opacity: 0.7;
     }
 
     .information-main {
+        display: none;
         margin: 0;
     }
 
+    .item-1-mobile,
+    .item-2-mobile,
+    .item-3-mobile {
+        margin: 16px;
+    }
 
-    .card {
-        display: flex;
-        flex-direction: column;
+    .card-mobile h3 {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    
+    .card-mobile h4 {
+        font-size: 18px;
+        font-weight: 200;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .card-mobile a {
+        color: #1e90ff;
+        text-decoration: none;
+    }
+
+    .mobile-img img {
         width: 100%;
-        margin-left: 16px;
+    }
+    .card {
+        display: none;
     }
 
-    .card .item-1, .item-2, .item-3 {
-        /* display: flex; */
-        background-color: white;
-        /* border-bottom: 1px solid whitesmoke; */
-        /* padding-left: 1rem; */
+    .card-mobile{
+        display: inline;
     }
+  
 
     .primary-img-container{
         display: none;
@@ -751,11 +711,6 @@ footer a {
     }
 
     .card-content {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 2rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
